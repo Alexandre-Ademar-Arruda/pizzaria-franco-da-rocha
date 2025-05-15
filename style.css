@@ -11,7 +11,7 @@
 .slides {
   display: flex;
   width: 240%;
-  max-width: 240px;
+  max-width: 250px;
   animation: deslizar 20s infinite;
 }
 
