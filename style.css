@@ -3,19 +3,29 @@ img {
     border-radius: 5px;
 }
 #header-logo img{
-    width: 350px;
-    max-width: 250px;
-    height: 80px;
+    width: 100%;
+    /*max-width: 250px;*/
+    height: auto;
     display: block;
-    margin: 5px;
     border-radius: 50%;
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.5);
     object-fit: contain; /* ou 'cover' se quiser preencher mesmo que corte */
 }
 
+#header-logo {
+    margin: 0;
+    padding: 0;
+    max-width: 250px;
+    height: auto;
+}
+
 #header {
-    background-color: orange;
-    width: 480px;
+    position: relative; /* ou fixed se quiser que fique fixo ao rolar */
+    top: 0;
+    left: 0;
+    width: 100%;
+
+    background-color: #fff;
     max-width: 250px;
     height: auto;
     display: flex;
@@ -38,7 +48,7 @@ img {
     max-width: 250px;
     height: 14px;
     margin-right: 10px;
-    border: nome;
+    border: none;
     border-radius: 5px;
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.5);
     display: flex;
