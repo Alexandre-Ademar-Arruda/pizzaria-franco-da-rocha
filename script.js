@@ -8,3 +8,7 @@ function fazerPedido(pizza) {
   const url = `https://wa.me/${numero}?text=${mensagem}`;
   window.open(url, "_blank");
 }
+
+const topoMenu = document.getElementById("topo-menu");
+
+topoMenu.addEventListener("hover")
