@@ -1,88 +1,218 @@
 
-img {
-    border-radius: 5px;
-}
-#header-logo img{
-    width: 100%;
-    /*max-width: 250px;*/
-    height: auto;
+.produtos-itens h2 {
+    margin-left: 5px;
+    background-color: transparent;
     display: block;
-    border-radius: 50%;
-    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.5);
-    object-fit: contain; /* ou 'cover' se quiser preencher mesmo que corte */
+}
+main {
+    background-color: var(--cinza-claro);
+    display: block;
+    flex-direction: row;
+}
+    
+.produtos-itens h2 {
+  margin: 5px;
+  background-color: transparent;
+  display: block;
+  color: var(--preto);
 }
 
-#header-logo {
-    margin: 0;
-    padding: 0;
-    max-width: 250px;
-    height: auto;
+
+main #menu {
+    background-color: var(--dourado);
+    display: flex;
+    justify-content: space-between;
 }
 
-#header {
-    position: relative; /* ou fixed se quiser que fique fixo ao rolar */
-    top: 0;
-    left: 0;
+
+#produtos-itens {
+    position: absolute;
+    top: 50px;
+    left: 50px;
+    color: var(--cinza-claro);
+}
+
+#logo-home {
+
+    background-image: url(img/banner-home-SJA.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
     width: 100%;
+    height: 500px;
+}
 
-    background-color: #fff;
-    max-width: 250px;
+#topo-redes-sociais ul li+li {
+    
+    margin-left: 3px;    
+
+}
+
+#topo-redes-sociais ul a:hover {
+
+    background-color: var(--cinza-claro);
+    
+    color: var(--preto);
+
+}
+
+#topo-redes-sociais ul a {
+    
+    text-decoration: none;
+
+    transition: color 3s;
+
+    transition: background-color 3s;
+
+}
+
+#topo-redes-sociais ul {
+
+    height: 16px;
+
+    display: flex;
+    
+    background-color: var(--dourado);
+    
+    justify-content: space-between;
+
+    align-items: center;
+    
+    font-size: 16px;
+
+    color: var(--preto);
+
+    list-style-type: none;
+
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3);
+
+}
+
+#topo-menu ul a:hover {
+
+    background-color: var(--cinza-claro);
+
+    color: var(--preto);
+
+}
+
+#topo-menu ul a {
+
+    text-decoration: none;
+
+    transition: color 8s ;
+
+    transition: background-color 1s;
+}
+
+#topo-menu ul li {
+    margin-left: 10px;
+}
+#topo-menu ul li+li {
+
+    margin-left: 10px;
+
+}
+
+#topo-menu ul {
+
+    height: 16px;
+
+    display: flex;
+    
+    background-color: var(--dourado);
+    
+    justify-content: space-between;
+
+    align-items: center;
+    
+    font-size: 16px;
+
+    color: var(--preto);
+
+    list-style-type: none;
+
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3);
+
+}
+
+#topo-logo img{
+    width: 300px;
+    max-width: 150px;
+    height: 50px;
+    border-radius: 2px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+#topo-logo {
+
+    background-color: var(--cinza-claro);
+
+    max-width: 100%;
+    
+    height: auto;
+
+    display: flex;
+
+    flex-direction: column;
+
+    align-items: center;
+
+    justify-content: center;
+
+    border-radius: 2px;
+
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3);
+
+    padding: 2px;
+
+}
+
+
+#topo {
+    width: 100%;
+    
+    height: auto;
+
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: center;
+
+    margin: 5px 0 5px 0;
+
+    border: none;
+
+    border-radius: 5px;
+
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+
+    background-color: var(--verde-escuro);
+}
+
+#section-main {
+    background-color: var(--dourado);
+    width: 100%;
     height: auto;
     display: flex;
     flex-direction: column;
+    justify-content: start;
     align-items: center;
-    justify-content: center;
-    margin-top: 5px;
-    border-radius: 10px;
-    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.5);
 }
-
-/*
- max-width: 100%;
-    height: auto;
-    display: block;
-*/
-#redes-sociais {
-    background-color: rgb(228, 10, 10);
-    width: auto;
-    max-width: 250px;
-    height: 14px;
-    margin-right: 10px;
-    border: none;
-    border-radius: 5px;
-    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.5);
-    display: flex;
-    justify-content: space-around;
-    gap: 10px;
-}
-
-#topo {
-    width: 100% ;
-    max-width: 250px;
-    display: flex;
-    justify-content: end;
-    align-items: center;
-    height: 30px;
-    margin: 0;
-    border: none;
-    border-radius: 5px;
-    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.5);
-    background-color: rgb(43, 204, 57);
-}
-
 
 body {
-    background-color: var(--cinza-claro);
+    background-color: var(--branco);
     color: var(--preto);
-    font-size: 0.8rem;
-    height:100vh;
+    font-size: 0.6rem;
     width: 100vw;
+    min-height: 100vh;
+    height:100vh;
     display: flex;
     flex-direction: column;
     align-items:center;
-    justify-content:center;
-    margin-top: 10px;
-    min-height: 100vh;
+    justify-content:start;
     overflow-y: auto;
 }
 
@@ -116,46 +246,3 @@ body {
 | **Cinza Claro**     | `#F5F5F5`  | Fundo de seções secundárias, formulários  |
 | **Preto**           | `#000000`  | Texto principal, ícones, rodapé           |
 */
-
-
-.carrossel {
-  width: 100%;
-  max-width: 250px;
-  margin: auto;
-  overflow: hidden;
-  border-radius: 10px;
-  box-shadow: 0 0 10px rgba(0,0,0,0.2);
-}
-
-.slides {
-  display: flex;
-  width: 240%;
-  max-width: 250px;
-  animation: deslizar 20s infinite;
-}
-
-.slides img {
-  width: 100%;
-  height: auto;
-  object-fit: cover;
-  flex-shrink: 0;
-}
-
-/* Reduz a altura da imagem em telas pequenas */
-@media (max-width: 600px) {
-  .slides img {
-    height: 200px;
-  }
-}
-
-@keyframes deslizar {
-  0%   { transform: translateX(0%); }
-  12.5% { transform: translateX(-100%); }
-  25% { transform: translateX(-200%); }
-  37.5% { transform: translateX(-300%); }
-  50% { transform: translateX(-400%); }
-  62.5% { transform: translateX(-500%); }
-  75% { transform: translateX(-600%); }
-  87.5% { transform: translateX(-700%); }
-  100% { transform: translateX(0%); }
-}
