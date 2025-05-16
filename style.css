@@ -1,16 +1,22 @@
+
+img {
+    border-radius: 5px;
+}
 #header-logo img{
     width: 350px;
     max-width: 250px;
     height: 80px;
     display: block;
     margin: 5px;
-    border-radius: 10px;
+    border-radius: 50%;
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.5);
+    object-fit: contain; /* ou 'cover' se quiser preencher mesmo que corte */
 }
 
 #header {
     background-color: orange;
     width: 480px;
+    max-width: 250px;
     height: auto;
     display: flex;
     flex-direction: column;
@@ -26,12 +32,12 @@
     height: auto;
     display: block;
 */
-.redes-sociais {
+#redes-sociais {
     background-color: rgb(228, 10, 10);
     width: auto;
     max-width: 250px;
     height: 14px;
-    margin-right: 20px;
+    margin-right: 10px;
     border: nome;
     border-radius: 5px;
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.5);
@@ -40,7 +46,7 @@
     gap: 10px;
 }
 
-.topo {
+#topo {
     width: 100% ;
     max-width: 250px;
     display: flex;
