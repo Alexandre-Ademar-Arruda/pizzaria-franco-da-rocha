@@ -59,25 +59,12 @@
     font-size: 12px;
 }
 
-main {
-    background-image: url(img/banner-home-SJA.jpg);
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    position: relative;
-    width: 95%;
-    height: 500px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-
 h1 {
     background-color: rgba(0,0,0,.5);
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    margin-top: 10px;
+    justify-content: start;
     align-items: center;
     width: 90%;
     height: 50px;
@@ -85,6 +72,22 @@ h1 {
     color: var(--cinza-claro);
     text-shadow: 2px 2px 5px rgba(218, 11, 11, 0.9);
 }
+
+main {
+    background-image: url(img/banner-home-SJA.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: absolute;
+    top: 0;
+    width: 95%;
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+}
+
 body {
     background-color: var(--preto);
     color: var(--cinza-claro);
@@ -95,7 +98,7 @@ body {
     flex-direction: column;
     align-items:center;
     justify-content:flex-start;
-    /*overflow-y: auto;*/
+    overflow-y: auto;
 }
 /* Reset CSS */
 * {
