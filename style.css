@@ -1,38 +1,49 @@
 
+@media (max-width: 768px) {
+  #home {
+    flex-direction: column;
+    flex-wrap: wrap;
+    height: auto;
+    padding: 10px 0;
+    gap: 10px;
+  }
+
+  #home .hiden {
+    width: 100%;
+    text-align: center;
+  }
+
+  #home a {
+    font-size: 1rem;
+  }
+
+  #home a:hover {
+    transform: translateY(-10px); /* Menor distância para não quebrar o layout no mobile */
+  }
+
+  h1 {
+    font-size: 18px;
+    height: auto;
+    padding: 10px;
+  }
+
+  main {
+    height: auto;
+    padding-bottom: 20px;
+  }
+}
 
 
 #home a:hover{
-
-    
     text-decoration: none;
-
     color: var(--cinza-claro);
-    
-    
     text-shadow: 0px 4px 8px rgba(255, 255, 255, 0.3);
-
-    /*font-size: 14px;*/
-
-    transform: translateY(30px);
-
+    transform: translateY(-30px);
 }
 
 #home a {
-
     display: inline-block;
-
     transition: transform 2s ease;
-    
-    /*
-    text-decoration: none;
-
-    color: var(--cinza-claro);
-
-    text-shadow: 0px 4px 8px rgba(0, 0, 0, 0.99);
-
-    transform: translateY(20px);
-    */
-
 }
 
 #home {
@@ -46,7 +57,6 @@
     justify-content: space-between;
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.9);
     font-size: 12px;
-
 }
 
 main {
@@ -55,7 +65,6 @@ main {
     background-position: center;
     background-repeat: no-repeat;
     position: relative;
-   
     width: 95%;
     height: 500px;
     display: flex;
