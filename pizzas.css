@@ -28,21 +28,21 @@ body {
     background-color: var(--vermelho-escuro);
 }
 
-#section-main {
+.section-main {
     background-color: var(--dourado);
     border: 2px solid var(--verde-escuro);
-    
     padding: 10px;
+    margin-bottom: 20px;
+    
     width: 100vw; 
     height: 100vh;
-
+    
     display: flex;
     flex-wrap: wrap;
 
-    flex-direction: row;
+    
     justify-content: center;
-    gap:  10px;
-    align-items: center;
+    gap:  20px;
      
 }
 
