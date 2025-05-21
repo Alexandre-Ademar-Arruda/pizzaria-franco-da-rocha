@@ -1,42 +1,18 @@
+:root {
+    --vermelho-escuro: #8B0000;
+    --verde-escuro: #006400;
+    --dourado: #DAA520;
+    --branco: #FFFFFF;
+    --cinza-claro: #F5F5F5;
+    --preto: #000000;
+}
 
-button {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    width: 80%;
-    border: none;
-    border-radius: 5px;
-    background-color: ;
-    padding: 5px;
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 
-}
-p {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    width: inherit;
-}
-h1 {
-    width: inherit;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-main {
-    width: 300px;
-    max-width: inherit;
-    height: 400px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    background-color: olivedrab;
-    gap: 20px;
-    border: none;
-}
 body {
     display: flex;
     flex-direction: column;
@@ -45,8 +21,61 @@ body {
     width: 100vw;
     height: 100vh;
 }
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+
+main {
+    width: 300px;
+    max-width: inherit;
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--cinza-claro);
+    gap: 20px;
+    border: none;
+    border-radius: 10px;
+}
+
+
+h1 {
+    width: 240px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.9);
+}
+
+p {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 240px;
+    border: none;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.9);
+    padding: 10px;
+
+}
+
+#cardapio {
+    display: inline-block;
+    background-color: var(--cinza-claro);
+    color: var(--preto);
+    flex-wrap: nowrap;
+    padding: 10px 20px;
+    text-decoration: none;
+    font-weight: bold;
+    width: 240px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.9);
+    /*transition: background-color 2s ease;*/
+    transition: background-color 0.9s cubic-bezier(0.9, 0.9, 0.9, 1);
+
+}
+
+#cardapio:hover {
+    background-color: var(--dourado) ;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.9);
+    text-shadow: rgba(0, 0, 0, 0.9);
+    padding: 10px;
 }

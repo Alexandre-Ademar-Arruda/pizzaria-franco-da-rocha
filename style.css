@@ -1,3 +1,84 @@
+/* Paleta de Cores */
+:root {
+  --vermelho-escuro: #8B0000;
+  --verde-escuro: #006400;
+  --dourado: #DAA520;
+  --branco: #FFFFFF;
+  --cinza-claro: #F5F5F5;
+  --preto: #000000;
+}
+
+/* Reset CSS */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing:border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+body {
+    background-color: var(--preto);
+    color: var(--cinza-claro);
+    font-size: 0.6rem;
+    width: 100vw;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+    justify-content:center;
+}
+
+main {
+    top: 0;
+    width: auto;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+h1 {
+    background-color: rgba(0,0,0,.5);
+    display: flex;
+    flex-direction: column;
+    margin-top: 10px;
+    justify-content: start;
+    align-items: center;
+    width: auto;
+    height: 50px;
+    font-size: 24px;
+    color: var(--cinza-claro);
+    text-shadow: 2px 2px 5px rgba(218, 11, 11, 0.9);
+}
+
+.porta-container {
+  position: relative;
+  display: inline-block;
+}
+
+.porta-img {
+  width: 230px;
+  display: block;
+}
+
+.texto-entre {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-decoration: none;
+  color: var(--cinza-claro);
+  font-size: 24px;
+  font-weight: bold;
+  text-shadow: 2px 2px 4px var(--dourado);
+  pointer-events: none;
+}
+
+
+
+
 
 @media (max-width: 768px) {
   #home {
@@ -59,61 +140,4 @@
     font-size: 12px;
 }
 
-h1 {
-    background-color: rgba(0,0,0,.5);
-    display: flex;
-    flex-direction: column;
-    margin-top: 10px;
-    justify-content: start;
-    align-items: center;
-    width: 90%;
-    height: 50px;
-    font-size: 24px;
-    color: var(--cinza-claro);
-    text-shadow: 2px 2px 5px rgba(218, 11, 11, 0.9);
-}
 
-main {
-    background-image: url(img/banner-home-SJA.jpg);
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    position: absolute;
-    top: 0;
-    width: 95%;
-    height: 500px;
-    display: flex;
-    flex-direction: column;
-    justify-content: start;
-    align-items: center;
-}
-
-body {
-    background-color: var(--preto);
-    color: var(--cinza-claro);
-    font-size: 0.6rem;
-    width: 100vw;
-    min-height: 100vh;
-    display: flex;
-    flex-direction: column;
-    align-items:center;
-    justify-content:flex-start;
-    overflow-y: auto;
-}
-/* Reset CSS */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing:border-box;
-    font-family: Arial, Helvetica, sans-serif;
-}
-
-/* Paleta de Cores */
-:root {
-    --vermelho-escuro: #8B0000;
-    --verde-escuro: #006400;
-    --dourado: #DAA520;
-    --branco: #FFFFFF;
-    --cinza-claro: #F5F5F5;
-    --preto: #000000;
-}

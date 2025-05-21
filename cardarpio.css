@@ -1,0 +1,144 @@
+:root {
+    --vermelho-escuro: #8B0000;
+    --verde-escuro: #006400;
+    --dourado: #DAA520;
+    --branco: #FFFFFF;
+    --cinza-claro: #F5F5F5;
+    --preto: #000000;
+}
+
+a {
+    text-decoration: none;
+    color: var(--cinza-claro);
+}
+span {
+    border-bottom: 2px;
+    width: auto;
+    height: auto;
+    
+    margin-top: 10px;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(--verde-escuro);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+}
+
+#section-cardapio {
+    background-color: var(--dourado);
+    width: 350px;
+    max-width: 240px;
+    height: 400px;
+    max-height: 350px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin: 10px;
+    gap: 10px;
+}
+.div-cardapio1 {
+    background-color: var(--vermelho-escuro);
+    width: 45%;
+    max-width: 110px;
+    height: 90%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    border: 1px solid var(--branco);   
+}
+
+#cardapio-pizza {
+    width: 90px;
+    height: 90px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.9);
+    font-size: 12px;    
+}
+#brotos {
+    background-color: var(--dourado);
+    width: 50px;
+    height: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.9);
+    border-radius: 10px;
+}
+#esfihas {
+    background-color: var(--dourado);
+    width: 50px;
+    height: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.9);
+    border-radius: 10px;
+}
+
+#sucos {
+    background-color: var(--dourado);
+    width: 50px;
+    height: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.9);
+    border-radius: 10px;
+}
+
+#refri {
+    background-color: var(--dourado);
+    width: 50px;
+    height: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.9);
+    border-radius: 10px;
+}
+
+#fogazzas {
+    background-color: var(--dourado);
+    width: 50px;
+    height: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.9);
+    border-radius: 10px;
+}
+
+.div-cardapio2 {
+    background-color: var(--vermelho-escuro);
+    width: 45%;
+    max-width: 110px;
+    height: 90%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    border: 1px solid var(--branco); 
+}
+
+

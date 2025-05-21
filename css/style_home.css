@@ -1,33 +1,35 @@
-
-main a {
-
-    text-decoration: none;
-
-    color: inherit;
-    
+/* Paleta de Cores */
+:root {
+    --vermelho-escuro: #8B0000;
+    --verde-escuro: #006400;
+    --dourado: #DAA520;
+    --branco: #FFFFFF;
+    --cinza-claro: #F5F5F5;
+    --preto: #000000;
 }
 
-main p:hover {
+/* Reset CSS */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing:border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
 
+body {
     background-color: var(--preto);
-
     color: var(--cinza-claro);
-
-}
-
-main p {
-    width: 160px;
-    height: 40px;
-    background-color: var(--vermelho-escuro);
-    margin: 40px;
+    font-size: 0.6rem;
+    width: 100vw;
+    min-height: 100vh;
+    height:100vh;
     display: flex;
-    flex-direction: column;    
-    align-items: center;
-    justify-content: center;
-    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.8);
-    font-size: 24px;
-
+    flex-direction: column;
+    align-items:center;
+    justify-content:start;
+    overflow-y: auto;
 }
+
 
 main {
     background-image: url(../img/banner-home-SJA.jpg);
@@ -42,6 +44,7 @@ main {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.9);
 }
 
 h1 {
@@ -56,33 +59,41 @@ h1 {
     color: var(--cinza-claro);
     text-shadow: 2px 2px 5px rgba(218, 11, 11, 0.9);
 }
-body {
-    background-color: var(--preto);
-    color: var(--cinza-claro);
-    font-size: 0.6rem;
-    width: 100vw;
-    min-height: 100vh;
-    height:100vh;
-    display: flex;
-    flex-direction: column;
-    align-items:center;
-    justify-content:start;
-    overflow-y: auto;
-}
-/* Reset CSS */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing:border-box;
-    font-family: Arial, Helvetica, sans-serif;
+
+
+main a {
+
+    text-decoration: none;
+
+    color: inherit;
+    
 }
 
-/* Paleta de Cores */
-:root {
-    --vermelho-escuro: #8B0000;
-    --verde-escuro: #006400;
-    --dourado: #DAA520;
-    --branco: #FFFFFF;
-    --cinza-claro: #F5F5F5;
-    --preto: #000000;
+
+main p {
+    width: 160px;
+    height: 320px;
+    background-color: var(--vermelho-escuro);
+    margin: 40px;
+    display: flex;
+    flex-direction: column;    
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.9);
+    font-size: 24px;
+    border-radius: 40%;
+    transition: 0.9s;
+}
+
+
+main p:hover {
+
+    background-color: var(--vermelho-escuro);
+
+    border-radius: 50%;
+
+    color: var(--cinza-claro);
+
+    font-size: 48px ;
+
 }
