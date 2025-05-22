@@ -46,13 +46,6 @@ body {
      
 }
 
-h2 {
-    font-size: 24px;
-    background-color: green;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
 
 .pizzas {
     background-color: var(--vermelho-escuro);
@@ -63,28 +56,54 @@ h2 {
 }
 
 a {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 300px;
     text-decoration: none;
+    color: inherit;
+    border: 2px solid var(--branco);
+    background-color: var(--vermelho-escuro);
+    overflow: hidden;
+
 }
 
 a img {
-    width: 300px;
-    height: 160px;
-}
-
-a:visited h2,
-a:active h2,
-a:hover h2,
-a:link h2 {
-    color: var(--branco);
-    text-decoration: none;
+    width: 100%;
+    height: auto;
+    display: block;
 }
 
 figcaption p {
-    font-size: 10px;
+    padding: 10px;
+    color: var(--dourado);
+    text-align: center;
+}   
+
+h2 {
+    font-size: 1.4rem;
+    margin-bottom: 10px;
 }
 
-ul li {
+details summary {
+    font-weight: bold;
+    cursor: pointer;
+    color: var(--branco);
+}
+
+details ul, details p {
+    margin-top: 10px;
+    font-size: 0.9rem;
+    color: var(--branco);
+}
+
+ul {
     list-style: none;
+    padding-left: 0;
+}
+
+li {
+    margin-bottom: 5px;
 }
 .hiden {
     display: none;
@@ -94,5 +113,20 @@ ul li {
 @media (max-width: 600px) {
     #section-main {
         flex-direction: column;
+        align-items: center;
     }
+
+    a {
+        max-width: 90%;
+    }
+
+    h2 {
+        font-size: 1.2rem;
+    }
+
+    details ul {
+        font-size: 1rem;
+    }
+
+
 }
