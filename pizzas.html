@@ -1,19 +1,34 @@
 <!DOCTYPE html>
+<!-- Define o tipo do documento como HTML5 -->
 <html lang="pt-BR">
 <head>
+  <!-- Define o conjunto de caracteres como UTF-8 -->
   <meta charset="UTF-8" />
+  <!-- Responsividade para dispositivos móveis -->
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <!-- Descrição da página para SEO -->
   <meta name="description" content="A melhor pizzaria da região! Peça online agora mesmo.">
+  <!-- Palavras-chave para SEO -->
   <meta name="keywords" content="pizza, pizzaria, napolitana, mussarela, calabresa, delivery">
+  <!-- Autor da página -->
   <meta name="author" content="JAS A PIZZARIA">
+  <!-- Link para o CSS externo -->
   <link rel="stylesheet" href="pizzas.css" />
+  <!-- Comentado: script externo (ativar se necessário) -->
+  <!--<script src="./script.js" defer></script>-->
+  <!-- Título da aba do navegador -->
   <title>🍕JOSA A PIZZARIA - Peça já sua Pizza!🍕</title>
 </head>
 
 <body>
+  <!-- Seção principal contendo as pizzas -->
   <section class="section-main">
+    
+    <!-- Exemplo de item de pizza: Mussarela -->
     <a href="#">
+      <!-- Imagem da pizza -->
       <img src="./img/redimensionar/pizzaMuzzarela.webp" alt="Pizza Mussarela">
+      <!-- Descrição da pizza -->
       <figcaption>
         <h2>Mussarela</h2>
         <details>
@@ -27,6 +42,8 @@
       </figcaption>
     </a>
 
+    <!-- Repete-se o mesmo padrão para as outras pizzas abaixo -->
+    <!-- Calabresa -->
     <a href="#">
       <img src="./img/redimensionar/pizzaCalabreza.webp" alt="Pizza Calabresa">
       <figcaption>
@@ -43,6 +60,7 @@
       </figcaption>
     </a>
 
+    <!-- Americana -->
     <a href="#">
       <img src="./img/redimensionar/pizzaNapolitana.webp" alt="Pizza Americana">
       <figcaption>
@@ -58,7 +76,8 @@
         </details>
       </figcaption>
     </a>
- 
+
+    <!-- Portuguesa -->
     <a href="#">
       <img src="./img/redimensionar/pizzaPortuguesa.webp" alt="Pizza Portuguesa">
       <figcaption>
@@ -78,6 +97,7 @@
       </figcaption>
     </a>
 
+    <!-- 4 Queijos -->
     <a href="#">
       <img src="./img/redimensionar/4-Queijos.webp" alt="Pizza 4 Queijos">
       <figcaption>
@@ -96,6 +116,7 @@
       </figcaption>
     </a>
 
+    <!-- Escarola -->
     <a href="#">
       <img src="./img/redimensionar/pizzaEscarola.webp" alt="Pizza Escarola">
       <figcaption>
@@ -115,5 +136,35 @@
       </figcaption>
     </a>
   </section>
+
+  <!-- Div para exibir lista de pizzas via JavaScript (atualmente não usada) -->
+  <div id="lista-pizzas"></div>
+
+  <!-- Modal para exibir detalhes da pizza ao clicar -->
+  <div id="modal-pizza" class="modal hidden">
+    <div class="modal-content">
+      <!-- Nome da pizza -->
+      <h2 id="modal-nome">Nome da Pizza</h2>
+      <!-- Descrição -->
+      <p id="modal-descricao">Descrição aqui</p>
+
+      <!-- Opções de tamanho -->
+      <div class="modal-tamanhos">
+        <label><input type="radio" name="tamanho" value="P" checked>Pequena - R$<span id="preco-p">0</span></label><br>
+        <label><input type="radio" name="tamanho" value="M">Média - R$<span id="preco-m">0</span></label>
+        <label><input type="radio" name="tamanho" value="G">Grande - R$<span id="preco-g">0</span></label>
+      </div>
+
+      <!-- Botões do modal -->
+      <div class="modal-botes">
+        <button onclick="adicionar_ao_carrinho()">🛒 Adicionar ao carrinho</button>
+        <button onclick="fechar_modal()">❌ Cancelar</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Script JavaScript -->
+   <script src="script.js"></script>
+
 </body>
 </html>
