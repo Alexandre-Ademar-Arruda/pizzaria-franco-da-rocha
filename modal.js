@@ -66,14 +66,15 @@ const pizzas = [
 
   // Função para abrir o modal com dados da pizza
   function abrirModal(pizza) {
-    modalNome.textContent = pizza.nome;
-    modalDescricao.textContent = pizza.descricao;
-    precoP.textContent = pizza.precos.P;
-    precoM.textContent = pizza.precos.M;
-    precoG.textContent = pizza.precos.G;
-    modal.classList.remove('hidden');
-    document.body.style.overflow = 'hidden';
-  }
+  modalNome.textContent = pizza.nome;
+  modalDescricao.textContent = pizza.descricao;
+  precoP.textContent = pizza.precoP;
+  precoM.textContent = pizza.precoM;
+  precoG.textContent = pizza.precoG;
+  modal.classList.remove('hidden');
+  document.body.style.overflow = 'hidden';
+}
+
 
   // Função para fechar o modal
   function fecharModal() {

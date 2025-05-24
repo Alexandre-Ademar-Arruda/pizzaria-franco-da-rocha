@@ -105,10 +105,6 @@ li {
 }
 
 
-.hidden {
-  display: none;
-}
-
 /* Modal escondido */
 .modal.hidden {
   display: none;
