@@ -146,3 +146,50 @@ li {
   }
 }
 
+#carrinho table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 10px;
+}
+#carrinho th, #carrinho td {
+  border: 1px solid #ffd54f;
+  padding: 6px 4px;
+  text-align: center;
+}
+#carrinho th {
+  background: #ffe082;
+}
+#carrinho button {
+  background: #d84315;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  padding: 4px 10px;
+  cursor: pointer;
+}
+#carrinho button:hover {
+  background: #bf360c;
+}
+
+#carrinho {
+  margin: 30px auto;
+  max-width: 500px;
+  background: #fff8e1;
+  border: 1px solid #ffd54f;
+  border-radius: 8px;
+  padding: 16px;
+  box-shadow: 0 2px 8px #0001;
+  font-family: Arial, sans-serif;
+}
+#carrinho ul {
+  list-style: none;
+  padding: 0;
+}
+#carrinho li {
+  margin-bottom: 8px;
+  border-bottom: 1px dotted #ffd54f;
+  padding-bottom: 4px;
+}
+#carrinho strong {
+  color: #d84315;
+}

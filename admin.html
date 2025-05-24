@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="admin.css">
+</head>
+<body>
+    
+
+
+<!-- admin.html -->
+<h2>Painel Administrativo - Adicionar Pizza</h2>
+<form id="form-pizza">
+  <input type="text" id="nome" placeholder="Nome da pizza" required><br>
+  <textarea id="descricao" placeholder="Descrição" required></textarea><br>
+  <input type="number" id="precoP" placeholder="Preço P" required>
+  <input type="number" id="precoM" placeholder="Preço M" required>
+  <input type="number" id="precoG" placeholder="Preço G" required><br>
+  <button type="submit">Adicionar Pizza</button>
+</form>
+
+<h3>Pizzas cadastradas:</h3>
+<ul id="lista-pizzas"></ul>
+
+<script>
+// Carrega as pizzas do localStorage ou cria array vazio
+let pizzas = JSON.parse(localStorage.getItem('pizzas')) || [];
+
+// Função para mostrar as pizzas cadastradas
+function mostrarPizzas() {
+  const lista = document.getElementById('lista-pizzas');
+  lista.innerHTML = '';
+  pizzas.forEach((pizza, idx) => {
+    const li = document.createElement('li');
+    li.textContent = `${pizza.nome} - P: R$${pizza.precos.P} | M: R$${pizza.precos.M} | G: R$${pizza.precos.G}`;
+    // Botão remover
+    const btn = document.createElement('button');
+    btn.textContent = 'Remover';
+    btn.onclick = () => {
+      pizzas.splice(idx, 1);
+      localStorage.setItem('pizzas', JSON.stringify(pizzas));
+      mostrarPizzas();
+    };
+    li.appendChild(btn);
+    lista.appendChild(li);
+  });
+}
+
+// Evento de envio do formulário
+document.getElementById('form-pizza').onsubmit = function(e) {
+  e.preventDefault();
+  // Cria objeto pizza
+  const pizza = {
+    nome: document.getElementById('nome').value,
+    descricao: document.getElementById('descricao').value,
+    precos: {
+      P: parseFloat(document.getElementById('precoP').value),
+      M: parseFloat(document.getElementById('precoM').value),
+      G: parseFloat(document.getElementById('precoG').value)
+    }
+  };
+  pizzas.push(pizza);
+  localStorage.setItem('pizzas', JSON.stringify(pizzas));
+  mostrarPizzas();
+  this.reset();
+};
+
+// Mostra as pizzas ao carregar a página
+mostrarPizzas();
+</script>
+
+</body>
+</html>

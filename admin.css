@@ -1,0 +1,89 @@
+/* Estilo para o painel administrativo */
+
+body {
+  background: #fffde7;
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+h2 {
+  color: #d84315;
+  text-align: center;
+  margin-top: 24px;
+}
+
+form#form-pizza {
+  background: #fff8e1;
+  border: 1px solid #ffd54f;
+  border-radius: 8px;
+  max-width: 400px;
+  margin: 24px auto;
+  padding: 20px;
+  box-shadow: 0 2px 8px #0001;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+form#form-pizza input,
+form#form-pizza textarea {
+  border: 1px solid #ffd54f;
+  border-radius: 4px;
+  padding: 8px;
+  font-size: 1em;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+form#form-pizza button {
+  background: #d84315;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  padding: 10px;
+  font-size: 1em;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+form#form-pizza button:hover {
+  background: #bf360c;
+}
+
+h3 {
+  text-align: center;
+  color: #6d4c41;
+}
+
+#lista-pizzas {
+  max-width: 500px;
+  margin: 0 auto 40px auto;
+  padding: 0;
+  list-style: none;
+}
+
+#lista-pizzas li {
+  background: #fffde7;
+  border: 1px solid #ffd54f;
+  border-radius: 6px;
+  margin-bottom: 10px;
+  padding: 12px 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#lista-pizzas button {
+  background: #d84315;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  padding: 6px 12px;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+#lista-pizzas button:hover {
+  background: #bf360c;
+}
